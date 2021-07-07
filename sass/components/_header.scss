@@ -66,43 +66,59 @@
   display: flex;
 }
 
-.nav-links__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .nav-links__item {
   position: relative;
   width: 100%;
   height: 100%;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.nav-links__link--current::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $buttom-color;
-  bottom: -32px;
-  left: 0;
+.nav-links__link {
+  padding: 32px 0;
+
+  &--current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $buttom-color;
+    bottom: -32px;
+    left: 0;
+  }
+}
+
+/*kontacts*/
+
+.kont-links__item {
+  padding: 32px 0;
+  color: $backfone-color;
+  text-align: left;
+  font-style: normal;
+  display: flex;
+  flex-wrap: nowrap;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .kont-links {
   display: flex;
   align-items: center;
+  margin-right: 0;
+  text-align: center;
 }
 
-.nav-links__link,
-.kont-links__item {
-  padding: 32px 0;
-}
-
-/*kontacts*/
-.kont-links__item {
-  color: $backfone-color;
-  text-align: left;
-  font-style: normal;
+.kont-links__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -113,44 +129,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.kont-links {
-  margin-left: 304px;
-  margin-right: 0;
-  display: f;
-  text-align: center;
-}
-
-.kont-links__link {
-  display: flex;
-  align-items: center;
-}
-
-.kont-links__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .kont-links__icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-}
-.kont-links__icon,
-.kont-links__icon-phone {
   fill: currentColor;
-}
-
-.kont-links__icon:hover,
-.kont-links__icon-phone:hover {
-  fill: $accent-color;
-}
-
-.kont-links__icon:focus,
-.kont-links__icon-phone:focus {
-  fill: $accent-color;
 }
 
 .kont-links__icon-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }

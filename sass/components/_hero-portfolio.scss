@@ -66,24 +66,24 @@
   margin-bottom: -30px;
 }
 
-.goods-cards-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
 .goods-cards-item__img-box {
   position: relative;
   overflow: hidden;
 }
 
-.goods-cards-item:hover,
-.goods-cards-item__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.goods-cards-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
 
-  transition-property: box-shadow;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    transition-property: box-shadow;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .goods-cards-item__text-box {

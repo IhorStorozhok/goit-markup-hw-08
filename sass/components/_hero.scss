@@ -45,22 +45,16 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   cursor: pointer;
-}
-.button:hover,
-.button:focus {
-  background-color: $buttom-color;
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $buttom-color;
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.button-modal:hover,
-.button-modal:focus {
-  background-color: $buttom-color;
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .section {
   padding: 94px 15px 94px 15px;
 }
