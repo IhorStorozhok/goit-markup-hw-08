@@ -1,0 +1,141 @@
+.section-box--dark {
+  background-color: $dark-fone;
+}
+
+.footer {
+  font-weight: 400;
+}
+
+.normtext {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $main-color;
+}
+
+.logo-footer {
+  padding-top: 0px;
+  display: inline-block;
+}
+
+.logo__black--white {
+  color: $main-color;
+}
+
+.kont-links-footer__link {
+  color: $backfone-color;
+  text-decoration: none;
+  font-style: normal;
+  list-style: none;
+}
+.kont-links-footer__link:hover,
+.kont-links-footer__link:focus {
+  color: $accent-color;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kont-links-footer {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.kont-links-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.sing-us {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  color: $main-color;
+  letter-spacing: 0.03em;
+  margin-left: 73px;
+  margin-right: 93px;
+}
+
+.soc-links-footer-list {
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 20px;
+}
+
+.soc-links-footer-list__item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.soc-links-footer-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-links-footer-list__item:hover {
+  background-color: $accent-color;
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-links-footer-list__link:focus {
+  background-color: $accent-color;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer {
+  display: flex;
+  padding: 60px 0;
+  align-items: center;
+}
+
+.subscribe-form__field {
+  margin-top: 20px;
+  padding: 0 0 0 16px;
+
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: $main-font;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.subscribe-us {
+  /*margin-top: 72px;*/
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  color: $main-color;
+  letter-spacing: 0.03em;
+}
+
+.subscribe-form__icon {
+  margin-left: 10px;
+}
+
+.subscribe-form__button {
+  display: inline-flex;
+  margin: 20px 0 0 12px;
+}

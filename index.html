@@ -11,7 +11,7 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 <!--Шапка сайта-->
 
@@ -19,36 +19,38 @@
   <header class="header container">
     <!--Навигация-->
 
-    <nav class="nav-bar">
-      <p class=".nav-bar__item">
-        <a href="./index.html" class="logo">Web<span class="logo__black">studio</span></a>
-      </p>
-      <ul class="nav-links">
-        <li class=>
-          <div class="nav-links__item"><a href="./index.html"
-              class="nav-links__link .nav-links__link--current">Студия</a></div>
+    <div class="header-position">
+      <nav class="nav-bar">
+        <p class=".nav-bar__item">
+          <a href="./index.html" class="logo">Web<span class="logo__black">studio</span></a>
+        </p>
+        <ul class="nav-links">
+          <li class=nav-links__item>
+            <div><a href="./index.html" class="nav-links__link nav-links__link--current">Студия</a></div>
+          </li>
+          <li class=nav-links__item>
+            <div><a href="./portfolio.html" class="nav-links__link">Портфолио</a></div>
+          </li>
+          <li class=nav-links__item>
+            <div><a href="#" class="nav-links__link">Контакты</a></div>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Контакты-->
+
+      <ul class="kont-links">
+        <li class="kont-links__item">
+          <a href="mailto:info@devstudio.com" class="kont-links__link"><svg class="kont-links__icon">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
         </li>
-        <li class=>
-          <div class="nav-links__item"><a href="./portfolio.html" class="nav-links__link">Портфолио</a></div>
-        </li>
-        <li class=>
-          <div class="nav-links__item"><a href="#" class="nav-links__link">Контакты</a></div>
-        </li>
+        <li class="kont-links__item"><a href="tel:+380961111111" class="kont-links__link"><svg
+              class="kont-links__icon kont-links__icon-phone">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-
-    <!--Контакты-->
-
-    <ul class="kont-links">
-      <li class="kont-links__item">
-        <a href="mailto:info@devstudio.com"><svg class="kont-links__icon">
-            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a>
-      </li>
-      <li class="kont-links__item"><a href="tel:+380961111111"><svg class="kont-links__icon kont-links__icon-phone">
-            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-          </svg>+38 096 111 11 11</a></li>
-    </ul>
+    </div>
 
 
   </header>
@@ -74,7 +76,7 @@
             </svg>
           </div>
           <h3 class="features__subtitle">Внимание к деталям</h3>
-          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
 
         <li class="features__item">
@@ -85,7 +87,7 @@
             </svg>
           </div>
           <h3 class="features__subtitle">Пунктуальность</h3>
-          <p>
+          <p class="features__text">
             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
           </p>
         </li>
@@ -98,7 +100,7 @@
             </svg>
           </div>
           <h3 class="features__subtitle">Планирование</h3>
-          <p>
+          <p class="features__text">
             Равным образом консультация с широким активом в значительной степени обуславливает.
           </p>
         </li>
@@ -111,7 +113,7 @@
             </svg>
           </div>
           <h3 class="features__subtitle">Современные технологии</h3>
-          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
       </ul>
     </section>
@@ -380,7 +382,7 @@
             </label>
           </li>
         </ul>
-        <button type="submit" class=".modal-form__button">Отправить</button>
+        <button type="submit" class=" button modal-form__button">Отправить</button>
       </form>
     </div>
 

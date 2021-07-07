@@ -1,0 +1,45 @@
+.features__title {
+  opacity: 0;
+  font-size: 0;
+}
+
+.features__list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__subtitle {
+  margin-bottom: 10px;
+}
+
+.features__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $features-font;
+}
+
+.features__subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+.features__icon-thumb {
+  padding: 25px 100px;
+  background-color: $filter-colour;
+  margin-bottom: 30px;
+}

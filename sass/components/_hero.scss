@@ -1,0 +1,70 @@
+.hero {
+  background-color: $dark-fone;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0)),
+    url(..//images/bgrimg.jpg);
+  max-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero__title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+
+  color: $main-color;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*button*/
+.button,
+.button-modal {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: $main-color;
+  background-color: $accent-color;
+
+  text-decoration: none;
+  border-width: unset;
+  border-style: none;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: $buttom-color;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  background-color: $buttom-color;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section {
+  padding: 94px 15px 94px 15px;
+}
+
+.features {
+  padding: 94px 15px 0px 15px;
+}

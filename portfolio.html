@@ -11,7 +11,7 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
@@ -19,37 +19,38 @@
   <header class="header container">
     <!--Навигация-->
 
-    <nav class="nav-bar">
-      <p class=".nav-bar__item">
-        <a href="./index.html" class="logo">Web<span class="logo__black">studio</span></a>
-      </p>
-      <ul class="nav-links">
-        <li class=>
-          <div class="nav-links__item"><a href="./index.html" class="nav-links__link ">Студия</a>
-          </div>
+    <div class="header-position">
+      <nav class="nav-bar">
+        <p class=".nav-bar__item">
+          <a href="./index.html" class="logo">Web<span class="logo__black">studio</span></a>
+        </p>
+        <ul class="nav-links">
+          <li class=nav-links__item>
+            <div><a href="./index.html" class="nav-links__link ">Студия</a></div>
+          </li>
+          <li class=nav-links__item>
+            <div><a href="./portfolio.html" class="nav-links__link nav-links__link--current">Портфолио</a></div>
+          </li>
+          <li class=nav-links__item>
+            <div><a href="#" class="nav-links__link">Контакты</a></div>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Контакты-->
+
+      <ul class="kont-links">
+        <li class="kont-links__item">
+          <a href="mailto:info@devstudio.com" class="kont-links__link"><svg class="kont-links__icon">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
         </li>
-        <li class=>
-          <div class="nav-links__item"><a href="./portfolio.html"
-              class="nav-links__link .nav-links__link--current">Портфолио</a></div>
-        </li>
-        <li class=>
-          <div class="nav-links__item"><a href="#" class="nav-links__link">Контакты</a></div>
-        </li>
+        <li class="kont-links__item"><a href="tel:+380961111111" class="kont-links__link"><svg
+              class="kont-links__icon kont-links__icon-phone">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-
-    <!--Контакты-->
-
-    <ul class="kont-links">
-      <li class="kont-links__item">
-        <a href="mailto:info@devstudio.com"><svg class="kont-links__icon">
-            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a>
-      </li>
-      <li class="kont-links__item"><a href="tel:+380961111111"><svg class="kont-links__icon kont-links__icon-phone">
-            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-          </svg>+38 096 111 11 11</a></li>
-    </ul>
+    </div>
 
 
   </header>
@@ -71,159 +72,169 @@
             <li class="buttons-list__item">
               <button type="button" class="buttons-list__filter">Маркетинг</button>
             </li>
+
           </ul>
           <div class="cards-table">
             <ul class="goods-cards">
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg1.jpg" alt="Веб-сайт"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Технокряк</h3>
-                    <p>Веб-сайт</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Технокряк</h3>
+                    <p class="goods-cards-item__name">Веб-сайт</p>
                   </div>
                 </a>
+
               </li>
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg2.jpg" alt="Дизайн"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Постер New Orlean vs Golden Star</h3>
-                    <p>Дизайн</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Постер New Orlean vs Golden Star</h3>
+                    <p class="goods-cards-item__name">Дизайн</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg3.jpg" alt="Приложение"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Ресторан Seafood</h3>
-                    <p>Приложение</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Ресторан Seafood</h3>
+                    <p class="goods-cards-item__name">Приложение</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg4.jpg" alt="Маркетинг"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Проект Prime</h3>
-                    <p>Маркетинг</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Проект Prime</h3>
+                    <p class="goods-cards-item__name">Маркетинг</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg5.jpg" alt="Приложение"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Проект Boxes</h3>
-                    <p>Приложение</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Проект Boxes</h3>
+                    <p class="goods-cards-item__name">Приложение</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg6.jpg" alt="Веб-сайт"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Inspiration has no Borders</h3>
+                    <p class="goods-cards-item__name">Веб-сайт</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg7.jpg" alt="Дизайн"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Издание Limited Edition</h3>
-                    <p>Дизайн</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Издание Limited Edition</h3>
+                    <p class="goods-cards-item__name">Дизайн</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg8.jpg" alt="Маркетинг"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Проект LAB</h3>
-                    <p>Маркетинг</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Проект LAB</h3>
+                    <p class="goods-cards-item__name">Маркетинг</p>
                   </div>
                 </a>
               </li>
+
               <li class="goods-cards-item">
                 <a href="#" class="goods-cards-item__link">
                   <div class="goods-cards-item__img-box"><img src="./images/images_pf/pfimg9.jpg" alt="Приложение"
                       width="370" height="294" class="goods-cards-item__picture" />
-                    <div class=goods-cards-item_overlay>
+                    <div class="goods-cards-item__overlay">
                       <p class="goods-cards-item__overlay-text">Технокряк это современная площадка распространения
                         коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.</p>
                     </div>
                   </div>
-                  <div class="card-textbox">
-                    <h3 class="sub-heading">Growing Business</h3>
-                    <p>Приложение</p>
+                  <div class="goods-cards-item__text-box">
+                    <h3 class="goods-cards-item__sub-heading">Growing Business</h3>
+                    <p class="goods-cards-item__name">Приложение</p>
                   </div>
                 </a>
               </li>
@@ -232,6 +243,7 @@
         </div>
       </section>
     </main>
+    <!--Подвал-->
     <!--Подвал-->
     <footer>
       <div class="section-box section-box--dark">
@@ -298,6 +310,7 @@
       </div>
 
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

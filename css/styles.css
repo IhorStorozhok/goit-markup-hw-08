@@ -31,6 +31,7 @@ h2,
 h3,
 p,
 ul,
+li,
 .nav-links,
 .kont-links,
 .features-list {
@@ -866,7 +867,7 @@ a {
   margin-right: 8px;
 }
 
-/*hero os portfolio*/
+/*hero of portfolio*/
 .work-examples a {
   line-height: 2;
   letter-spacing: 0.06em;

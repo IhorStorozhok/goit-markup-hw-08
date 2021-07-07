@@ -1,0 +1,49 @@
+:root {
+  --accent-colour: #2196f3;
+  --normal-colour: #212121;
+  --backfone-colour: #757575;
+  --second-colour: #ffffff;
+  --backroud-dark: #2f303a;
+  --filter-colour: #f5f4fa;
+  --main-font: 'Roboto', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
+  --links-logo-colour: #afb1b8;
+  --transition-duration: 250ms;
+}
+
+body {
+  background-color: $main-color;
+  color: $text-color;
+  font-family: $main-font;
+  font-size: $normal-font-size;
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: $main-letter-spacing;
+}
+* h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+.nav-links,
+.kont-links,
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+}
