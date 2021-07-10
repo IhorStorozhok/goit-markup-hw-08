@@ -112,8 +112,21 @@
    &:focus{
   fill: $accent-color;
 
+   
+}
+&--close{
+width: 40px;
+height: 40px;
+position: absolute;
+top: 10px;
+right: 15px;
+z-index: 3;
+
+
+
 }
 }
+
 
 .mob-menu__nav{
   position: fixed;
@@ -169,7 +182,8 @@ letter-spacing: 0.02em;
 
 .mob-menu__soc-links{
   display: flex;
-  flex-direction: row;  
+  flex-direction: row; 
+  flex-wrap: wrap; 
 }
 
 
