@@ -1,5 +1,10 @@
 .team {
   padding: 60px 15px;
+  @media screen and (min-width:1200px) {
+     padding: 94px 15px;
+     
+     
+}
 }
 
 .team__title {
@@ -8,6 +13,13 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 1.178;
+  
+ @media screen and (min-width:1200px) {
+     font-size: 36px;
+     line-height: 1.16;
+     
+     
+}
 }
 
 .team-cards__position {
@@ -26,7 +38,7 @@
 .team-cards {
   margin: 0;
   padding: 0;
- /* display: flex;*/
+  display: block;
   margin-top: 30px;
   margin-bottom: -30px;
    
@@ -40,6 +52,7 @@
 
  @media screen and (min-width:1200px) {
      flex-wrap: nowrap;
+     margin-top: 50px;
      
      
 }
