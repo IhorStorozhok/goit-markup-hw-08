@@ -35,6 +35,8 @@
   font-size: 26px;
   line-height: 1.1923;
   letter-spacing: 0.03em;
+  margin:16px 0;
+  display: block;
   /*margin: 24px 93px 25px 0px;*/
 }
 
@@ -63,7 +65,8 @@
 }
 
 .nav-links {
-  display: flex;
+ /* display: flex;*/
+ display: none;
 }
 
 .nav-links__item {
@@ -91,6 +94,134 @@
   }
 }
 
+
+.mob-menu__button {
+  margin: 22px 8px 22px 0;
+  padding: 0;
+  border: 0;
+  max-height: 16px;
+  cursor: pointer;
+    
+  }
+
+.mob-menu__button-icon{
+  width:24px;
+  height: 16px;
+   &:hover{
+  fill: $accent-color;}
+   &:focus{
+  fill: $accent-color;
+
+}
+}
+
+.mob-menu__nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw ;
+  height: 100vh;
+  background-color: $main-color;
+  z-index: 2;
+  padding: 48px 15px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+
+.mob-menu__nav-links{
+font-weight: 500;
+font-size: 40px;
+line-height: 1.175;
+letter-spacing: 0.02em;
+
+}
+
+.mob-menu__nav-item {
+  
+
+  &:not(:last-child){
+  margin-bottom: 32px;
+} 
+  }
+
+
+
+
+.mob-menu__nav-item--current {
+    color: var(--accent-colour);
+  }
+
+
+  .mob-menu__item-link{
+    &:focus{
+  color: var(--accent-colour);
+}
+
+&:hover{
+  color: var(--accent-colour);
+}
+
+}
+
+
+.mob-menu__soc-links{
+  display: flex;
+  flex-direction: row;  
+}
+
+
+.mob-menu-soc__item {
+
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+
+
+color:$accent-color;
+ 
+ 
+ 
+ 
+  &:not(:last-child){
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right:  1px solid rgba(33, 33, 33, 0.2);
+
+  }
+}
+
+.mob_menu__kont-item{
+font-weight: 500;
+font-size: 24px;
+line-height: 1.166;
+letter-spacing: 0.02em;
+margin-bottom: 32px;
+color: $accent-color;
+
+&:last-child{
+  margin-bottom: 64px;
+  color: $backfone-color;
+}
+
+
+}
+
+
+.mob_menu__kont-link {
+    &:focus{
+  color: var(--accent-colour);
+}
+
+&:hover{
+  color: var(--accent-colour);
+}
+
+}
+
 /*kontacts*/
 
 .kont-links__item {
@@ -107,10 +238,11 @@
 }
 
 .kont-links {
-  display: flex;
+  display: none;
+  /*display: flex;
   align-items: center;
   margin-right: 0;
-  text-align: center;
+  text-align: center;*/
 }
 
 .kont-links__link {
