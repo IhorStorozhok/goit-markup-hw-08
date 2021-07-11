@@ -58,7 +58,11 @@
 .logo-footer {
   padding-top: 0px;
   display: inline-block;
-}
+ }
+
+ .logo {
+   margin: 0;
+ }
 
 .logo__black--white {
   color: $main-color;

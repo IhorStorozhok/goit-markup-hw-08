@@ -1,7 +1,21 @@
+.work-examples {
+  padding: 60px 15px 60px 15px;
+   @media screen and (min-width:1200px) {
+  padding: 94px 15px 94px 15px; }   
+}
+
 .buttons-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: -15px;
+
+   @media screen and (min-width:768px){
+     flex-wrap: nowrap;
+     justify-content: center;
+     margin-bottom: 50px;
+   }
 }
 
 .buttons-list__filter {
@@ -33,4 +47,9 @@
 }
 .buttons-list__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.buttons-list__item{
+  margin-top: 15px;
+
 }

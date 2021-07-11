@@ -32,13 +32,31 @@
   color: $accent-color;
   font-family: $accent-font;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.1923;
   letter-spacing: 0.03em;
   margin:16px 0;
   display: block;
+  @media screen and (min-width:768px)
+    {font-size: 24px;
+    line-height: 1.16
+     } 
+  @media screen and (min-width:1200px)
+  {font-size: 26px;
+  line-height: 1.19
+     } 
+    }
+
+  .nav-bar__item{
+     @media screen and (min-width:768px){
+       margin:26px 0 ;
+       
+     }
+
+  }
+  
   /*margin: 24px 93px 25px 0px;*/
-}
+
 
 .logo__black {
   color: #000000;
@@ -57,6 +75,7 @@
     color: var(--accent-colour);
     transition-property: color;
     transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &--current {
@@ -65,8 +84,16 @@
 }
 
 .nav-links {
- /* display: flex;*/
+ 
  display: none;
+ @media screen and (min-width:768px){
+ display: flex;
+ margin-left: 88px;
+ }
+ @media screen and (min-width:1200px){
+  margin-left: 93px;  
+ }
+
 }
 
 .nav-links__item {
@@ -101,6 +128,8 @@
   border: 0;
   max-height: 16px;
   cursor: pointer;
+   @media screen and (min-width:768px) {
+   display: none;}
     
   }
 
@@ -108,12 +137,20 @@
   width:24px;
   height: 16px;
    &:hover{
-  fill: $accent-color;}
+  fill: $accent-color;
+ 
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
    &:focus{
   fill: $accent-color;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+} 
 
-   
-}
 &--close{
 width: 40px;
 height: 40px;
@@ -121,8 +158,6 @@ position: absolute;
 top: 10px;
 right: 15px;
 z-index: 3;
-
-
 
 }
 }
@@ -164,17 +199,27 @@ letter-spacing: 0.02em;
 
 
 .mob-menu__nav-item--current {
-    color: var(--accent-colour);
+  color: var(--accent-colour);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
   }
 
 
   .mob-menu__item-link{
     &:focus{
   color: var(--accent-colour);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 &:hover{
   color: var(--accent-colour);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 }
@@ -200,10 +245,10 @@ color:$accent-color;
  
  
  
-  &:not(:last-child){
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right:  1px solid rgba(33, 33, 33, 0.2);
+&:not(:last-child){
+margin-right: 10px;
+padding-right: 10px;
+border-right:  1px solid rgba(33, 33, 33, 0.2);
 
   }
 }
@@ -228,10 +273,15 @@ color: $accent-color;
 .mob_menu__kont-link {
     &:focus{
   color: var(--accent-colour);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
 }
 
 &:hover{
   color: var(--accent-colour);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 }
@@ -242,22 +292,50 @@ color: $accent-color;
   padding: 32px 0;
   color: $backfone-color;
   text-align: left;
-  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+
   display: flex;
   flex-wrap: nowrap;
+  @media screen and (min-width:768px){
+   padding: 0 0;
+     
+   &:first-child{
+   margin-bottom:10px ;
+  }
+  }
 
   &:not(:last-child) {
     margin-right: 30px;
   }
+
+  @media screen and (min-width:1200px){
+   font-size: 14px;
+  line-height: 1.16;
+  margin-bottom:10px  
+}
 }
 
 .kont-links {
   display: none;
-  /*display: flex;
-  align-items: center;
-  margin-right: 0;
-  text-align: center;*/
-}
+
+@media screen and (min-width:768px) {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: right;
+ align-items: center;
+ margin-right: 0;
+ text-align: center;
+ margin-left: 84px; } 
+ 
+ @media screen and (min-width:1200px){
+   margin-left: 305px;
+ }
+
+ }
+ 
 
 .kont-links__link {
   display: flex;

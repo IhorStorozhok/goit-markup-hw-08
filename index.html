@@ -22,15 +22,15 @@
 
       <div class="header-position">
         <nav class="nav-bar">
-          <p class=".nav-bar__item">
+          <div class="nav-bar__item">
             <a href="./index.html" class="logo">Web<span class="logo__black">studio</span></a>
-          </p>
+          </div>
           <ul class="nav-links">
             <li class=nav-links__item>
-              <div><a href="./index.html" class="nav-links__link--current ">Студия</a></div>
+              <div><a href="./index.html" class="nav-links__link nav-links__link--current ">Студия</a></div>
             </li>
             <li class=nav-links__item>
-              <div><a href="./portfolio.html" class="nav-links__link nav-links__link">Портфолио</a></div>
+              <div><a href="./portfolio.html" class=" nav-links__link">Портфолио</a></div>
             </li>
             <li class=nav-links__item>
               <div><a href="#" class="nav-links__link">Контакты</a></div>
@@ -60,16 +60,7 @@
               </use>
             </svg>
           </button>
-
-          <button type="button" class="mob-menu__button mob-menu__button--close">
-            <svg class="mob-menu__button-icon mob-menu__button-icon--close">
-              <use href="./images/symbol-defs.svg#icon-close">
-
-              </use>
-            </svg>
-          </button>
-
-          <nav class="mob-menu__nav">
+          <nav class="mob-menu__nav backdrop--is-hidden ">
             <ul class="mob-menu__nav-links">
 
               <li class="mob-menu__nav-item mob-menu__nav-item--current"><a href="./index.html"
@@ -82,6 +73,14 @@
 
             </ul>
             <div>
+
+              <button type="button" class="mob-menu__button mob-menu__button--close">
+                <svg class="mob-menu__button-icon mob-menu__button-icon--close">
+                  <use href="./images/symbol-defs.svg#icon-close">
+                  </use>
+                </svg>
+              </button>
+
               <ul class="mob-menu__kont-links">
 
 

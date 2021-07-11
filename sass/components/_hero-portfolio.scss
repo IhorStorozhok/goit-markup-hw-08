@@ -72,6 +72,8 @@
 }
 
 .goods-cards-item {
+  width: 450px;
+  height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -84,6 +86,15 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+   @media screen and (min-width:768px){
+     flex-basis: calc((100% - 60px)/2);
+   }
+
+    @media screen and (min-width:1200px){
+     flex-basis: calc((100% - 90px)/3);
+   }
+
 }
 
 .goods-cards-item__text-box {
